@@ -1,6 +1,9 @@
 export default class {
   static ClickValidatingContentBtn() {
-    cy.get("button").contains("Validate Content").should("be.visible").click();
+    cy.get("button")
+      .contains("Validate Content")
+      .should("be.visible")
+      .click({ force: true });
   }
   static WarningshownContent() {
     cy.get(

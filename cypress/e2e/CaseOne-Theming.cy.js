@@ -11,6 +11,6 @@ describe("Theming showcase uses various configuration options to communicate", (
     CaseOneTheming.SwitchesUIScale();
   });
   it("To Verify theme switching when click on light button", () => {
-    CaseOneTheming.ThemeDrakLight("Light");
+    CaseOneTheming.ThemeDrakLight();
   });
 });

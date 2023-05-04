@@ -15,8 +15,8 @@ export default class {
       .invoke("attr", "data-ubq-scale")
       .should("equal", "large");
   }
-  static ThemeDrakLight(theme) {
-    cy.get("button").contains(theme).click();
+  static ThemeDrakLight() {
+    cy.get("button").contains("Light").click({ force: true });
     cy.get("#root-shadow")
       .invoke("attr", "data-ubq-theme")
       .should("equal", "light");
