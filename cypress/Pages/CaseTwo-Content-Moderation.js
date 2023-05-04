@@ -12,7 +12,7 @@ export default class {
     });
   }
   static ClickSelectBtn() {
-    cy.get(".ValidationBox_checkCTA__UkvmA").eq(0).should("be.visible").click();
+    cy.contains("Select").eq(0).should("be.visible").click();
   }
   static ClickReplaceImageBtn() {
     cy.get("#root-shadow")
@@ -23,8 +23,8 @@ export default class {
   static selectImagetoReplace() {
     cy.get("#root-shadow")
       .shadow()
-      .find(".UBQ_AssetResultContainer__block--TrDHA")
-      .eq(1)
+      .find("button[name='assetLibraryCard-ly.img.image']")
+      .eq(2)
       .click();
   }
   static ValidateAfterReplaceImageWraning() {
